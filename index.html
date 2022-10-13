@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/70e6a440f9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <div class="nav">
+        <h1>Satellite</h1>
+      </div>
+      <div class="btn-box">
+        <a href="#" class="home-btn">Find yourself</a>
+        <a href="#" class="custom-btn">Custom Coordinates</a>
+      </div>
+      <form class="date-form hidden">
+        <input type="date" class="date-input" />
+
+        <button class="date-btn">Submit</button>
+      </form>
+      <form class="custom-form hidden">
+        <div class="latitude-box hidden">
+          <p>Latitude</p>
+          <input type="text" class="custom-latitude" />
+        </div>
+        <div class="longitude-box">
+          <p>Longitude</p>
+          <input type="text" class="custom-longitude" />
+        </div>
+
+        <button class="custom-submit-btn"></button>
+      </form>
+      <div class="image-box hidden"></div>
+      <a href="#" class="return-btn hidden">Return</a>
+      <div class="footer">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+    </div>
+    <!-- js -->
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
