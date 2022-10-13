@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid red;
 }
 
 .hero {
@@ -53,7 +52,8 @@
 
 .home-btn,
 .custom-btn,
-.return-btn {
+.return-btn,
+.custom-submit-btn {
   color: black;
   text-decoration: none;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -64,6 +64,7 @@
   transition: transform 0.3s ease-in-out, color 0.3s ease-in-out,
     background-color 0.3s ease-in-out;
   margin: 0.5rem;
+  cursor: pointer;
 }
 
 .return-btn {
@@ -72,10 +73,18 @@
 
 .home-btn:hover,
 .custom-btn:hover,
-.return-btn:hover {
+.return-btn:hover,
+.custom-submit-btn:hover {
   transform: scale(1.1);
   color: white;
   background-color: black;
+}
+
+.btn-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .date-input {
@@ -144,12 +153,17 @@
   justify-content: center;
 }
 
-.latitude-box,
-.longitude-box {
+.custom-box {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 25rem;
+}
+
+.custom-box p {
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 0.1rem;
 }
 
 .latitude-box p,
@@ -161,8 +175,13 @@
 
 .custom-longitude,
 .custom-latitude {
-  width: 15rem;
+  height: 1.5rem;
+  width: 5rem;
   position: relative;
+  outline: none;
+  border: none;
+  padding: 0.25rem;
+  margin: 0.5rem;
 }
 
 .hidden {
